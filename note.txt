@@ -2,6 +2,9 @@
 
 2. <?php get_template_part('mytext'); ?>  যদি কোনো কিছু আদালা করে ডায়নামিক করতে চাই তাহলে উদাহরন হিসাবে mytext ফাইল তৈরী করে ওইটা ভিতরে রেখে ফাংশন দিয়ে কল করতে পারি।
 
+3. seo optimizing code : <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><?php if (is_single() || is_page()) { wp_title('',true); } elseif(is_front_page()) { bloginfo('description'); } else { bloginfo('description'); } ?> | <?php bloginfo('name');?></title>
+
 
 
 
