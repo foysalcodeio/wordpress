@@ -4,6 +4,8 @@
 
 3. seo optimizing code : <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php if (is_single() || is_page()) { wp_title('',true); } elseif(is_front_page()) { bloginfo('description'); } else { bloginfo('description'); } ?> | <?php bloginfo('name');?></title>
+	
+4. wordpress dynamically menu add করার জন্য register_nav_menus(); এটি functions.php ফাইলে বসিয়ে দিতে হয়।
 
 
 
